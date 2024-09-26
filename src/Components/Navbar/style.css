@@ -1,0 +1,45 @@
+.navbar_component {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #cec8c8; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar_logo > i {
+    height: 30px; 
+    cursor: pointer; 
+    font-size: 25px;
+}
+
+.navbar_list {
+    display: flex;
+    gap: 30px; 
+    margin: 0; 
+}
+
+.navbar_list > li {
+    list-style: none;
+}
+
+.navbar_list > li > a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: 500; 
+    transition: color 0.3s; 
+}
+
+.navbar_list > li > a:hover {
+    color: rgb(109, 42, 42); 
+}
+
+.navbar_list > li > a.active {
+    color: rgb(109, 42, 42); 
+    font-weight: bold; 
+    border-bottom: 2px solid rgb(109, 42, 42); 
+}
+
+.mobileScreen i {
+    color: black; 
+}

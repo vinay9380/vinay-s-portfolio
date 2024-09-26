@@ -1,0 +1,151 @@
+.homepage_container{
+    background-color: white;
+    color: #181515;
+    padding: 20px 30px;
+    height: 100vh;
+    height: calc(100vh - 120px);
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    background: #cec8c8;
+    border-radius: 12px;
+    /* padding: 10px; */
+    /* justify-content: space-between; */
+    display: inline-flex;
+    /* width: 100%; */
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepahge_mainheading{
+    font-size: 22px ;
+    font-weight: 700;
+    width: 300px;
+}
+
+.homepage_desc{
+    width: 400px;
+    padding: 30px 0;
+    font-size: 16px;
+    font-family: system-ui;
+}
+.homepage_techlogo{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+.homepage_techlogo >i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    animation: fadeIn 1s forwards;
+}
+.icon-container i:hover {
+    color: #007bff; /* Change color on hover */
+}
+.image {
+    max-width: 100%; /* Allow the container to shrink */
+    height: auto;    /* Maintain aspect ratio */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Initial position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+.homepage_techlogo i:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.homepage_techlogo i:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.homepage_techlogo i:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.homepage_techlogo i:nth-child(4) {
+    animation-delay: 2s;
+}
+.image >img{
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .homepage_mainheading {
+        font-size: 20px;
+        width: 250px;
+    }
+    
+    .homepage_desc {
+        width: 350px; 
+        font-size: 15px; 
+    }
+
+    .card {
+        gap: 50px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .homepage_mainheading {
+        font-size: 18px;
+        width: 100%; 
+    }
+
+    .homepage_desc {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .card {
+        flex-direction: column; 
+        gap: 30px; 
+        padding: 8px;
+    }
+
+    .homepage_techlogo {
+        flex-direction: row;
+        justify-content: center; 
+    }
+
+    .homepage_techlogo > i {
+        font-size: 25px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage_mainheading {
+        font-size: 16px;
+    }
+
+    .homepage_desc {
+        font-size: 14px; 
+    }
+
+    .homepage_techlogo > i {
+        font-size: 20px; 
+    }
+    .image >img{
+        width: 300px;
+    }
+
+    .card{
+        flex-direction: column;
+        gap: 30px;
+        padding: 8px;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+}
