@@ -22,6 +22,74 @@
     margin-bottom: 15px;   
 }
 
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    height: 4px;
+    background: #64ffda;
+    border-radius: 2px;
+}
+
+.about-content {
+    color: #a8b2d1;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.highlight {
+    color: #64ffda;
+    font-weight: 600;
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .skills-title {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Animation for skill items on hover */
+@keyframes skillPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(100, 255, 218, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(100, 255, 218, 0);
+    }
+}
+
 @media (max-width: 480px) {
     .about-container {
         margin: 20px !important;

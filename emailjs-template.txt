@@ -1,0 +1,14 @@
+Subject: New Portfolio Contact Message from {{user_name}}
+
+Hello Vinay,
+
+You have received a new message from your portfolio website:
+
+Name: {{user_name}}
+Email: {{user_email}}
+
+Message:
+{{message}}
+
+---
+This email was sent from your portfolio contact form.
